@@ -1,0 +1,33 @@
+name: Shuffle Random Repository
+
+on:
+  schedule:
+    - cron: "*/6 * * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  shuffle:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python Engine
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run Shuffler Script
+        run: python update_readme.py
+
+      - name: Commit and Update Live Profile Page
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@://github.com"
+          git diff --quiet && echo "No change needed" || ( git commit -am "🎲 Automated shuffle: Featured repo updated" && git push )

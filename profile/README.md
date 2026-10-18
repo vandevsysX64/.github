@@ -1,7 +1,6 @@
 # Hi there! 👋
 
-![Profile view counter on GitHub](https://komarev.com/ghpvc/?username=vandevsysX64)
-
+![Profile views](https://views.igorkowalczyk.dev/api/badge/example?style=classic)
 
 I am a developer focused on low-level system design, data architectures, and flexible software engineering. 
 

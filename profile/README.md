@@ -19,7 +19,6 @@ I architected the **.FRes** format, a custom, uncompressed 16-bit HDR video cont
 ---
 
 <!-- RANDOM-REPO:START -->
-<!-- Error fetching repositories: Expecting value: line 9 column 1 (char 8) -->
 <!-- RANDOM-REPO:END -->
 
 ---

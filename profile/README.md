@@ -1,7 +1,8 @@
 # Hi there! 👋
+### Profile Views:
+![Profile views](https://views.igorkowalczyk.dev/api/badge/vandevsysX64?style=classic)
 ### My Skills:
 ![skils](https://skillicons.dev/icons?i=py,java,linux)
-![Profile views](https://views.igorkowalczyk.dev/api/badge/vandevsysX64?style=classic)
 *   🐍 **Python:** Advanced proficiency. Used for high-speed file streaming, binary array manipulation, and engineering data pipelines.
 *   ☕ **Java:** Know a bit of Java; familiar with object-oriented fundamentals and building structured application logic.
 *   🐧 **Linux:** I know random Linux commands.

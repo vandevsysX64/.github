@@ -1,6 +1,6 @@
 # Hi there! 👋
 
-![Profile views](https://views.igorkowalczyk.dev/api/badge/example?style=classic)
+![Profile views](https://views.igorkowalczyk.dev/api/badge/vandevsysX64?style=classic)
 
 I am a developer focused on low-level system design, data architectures, and flexible software engineering. 
 

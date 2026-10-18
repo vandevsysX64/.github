@@ -1,42 +1,34 @@
 import random
 import re
-import urllib.request
-import json
 import os
 
 def get_random_repo():
-    url = "https://github.com"
+    # Statically map your personal repository collection details
+    # This prevents internet rate blocks or empty JSON data failures completely
+    my_repos = [
+        {
+            "name": "FRes-Video-Format",
+            "url": "https://github.com",
+            "desc": "A custom, uncompressed 16-bit HDR video container layout utilizing interleaved audio-first binary streams with real-time memory purging.",
+            "lang": "Python"
+        },
+        {
+            "name": ".github",
+            "url": "https://github.com",
+            "desc": "Centralized GitHub profile metadata workspace configuration tracking automated project cards and statistics screens.",
+            "lang": "Python / YAML"
+        }
+    ]
     
-    # Securely retrieve the GitHub Actions security token from the server engine environment
-    token = os.environ.get("GITHUB_TOKEN")
+    # Select one repository entirely at random
+    chosen = random.choice(my_repos)
     
-    headers = {'User-Agent': 'Python-Script'}
-    if token:
-        # Inject authentication headers to elevate rate limits to 1,000 requests/hr
-        headers['Authorization'] = f"token {token}"
-        
-    req = urllib.request.Request(url, headers=headers)
-    
-    try:
-        with urllib.request.urlopen(req) as response:
-            repos = json.loads(response.read().decode())
-    except Exception as e:
-        return f"<!-- Error fetching repositories: {e} -->"
-    
-    # Filter out forks and your meta configuration repository
-    public_repos = [r for r in repos if not r['fork'] and r['name'] != '.github']
-    
-    if not public_repos:
-        return "### 🎲 Featured Repository\n> No public repository variants discovered yet!"
-        
-    chosen = random.choice(public_repos)
-    name = chosen['name']
-    repo_url = chosen['html_url']
-    desc = chosen['description'] if chosen['description'] else "No project description provided yet."
-    stars = chosen['stargazers_count']
-    lang = chosen['language'] if chosen['language'] else "Mixed / Polyglot"
+    name = chosen["name"]
+    repo_url = chosen["url"]
+    desc = chosen["desc"]
+    lang = chosen["lang"]
 
-    return f"### 🎲 Featured Repository: [{name}]({repo_url})\n> {desc}\n> 📊 **Primary Language:** {lang} | ⭐ **Stars:** {stars}"
+    return f"### 🎲 Featured Repository: [{name}]({repo_url})\n> {desc}\n> 📊 **Primary Language:** {lang}"
 
 def update_readme():
     readme_path = "profile/README.md"

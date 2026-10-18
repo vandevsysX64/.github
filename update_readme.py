@@ -2,10 +2,20 @@ import random
 import re
 import urllib.request
 import json
+import os
 
 def get_random_repo():
     url = "https://github.com"
-    req = urllib.request.Request(url, headers={'User-Agent': 'Python-Script'})
+    
+    # Securely retrieve the GitHub Actions security token from the server engine environment
+    token = os.environ.get("GITHUB_TOKEN")
+    
+    headers = {'User-Agent': 'Python-Script'}
+    if token:
+        # Inject authentication headers to elevate rate limits to 1,000 requests/hr
+        headers['Authorization'] = f"token {token}"
+        
+    req = urllib.request.Request(url, headers=headers)
     
     try:
         with urllib.request.urlopen(req) as response:
@@ -13,7 +23,7 @@ def get_random_repo():
     except Exception as e:
         return f"<!-- Error fetching repositories: {e} -->"
     
-    # Exclude forks and your meta config repository
+    # Filter out forks and your meta configuration repository
     public_repos = [r for r in repos if not r['fork'] and r['name'] != '.github']
     
     if not public_repos:
@@ -29,7 +39,6 @@ def get_random_repo():
     return f"### 🎲 Featured Repository: [{name}]({repo_url})\n> {desc}\n> 📊 **Primary Language:** {lang} | ⭐ **Stars:** {stars}"
 
 def update_readme():
-    # PATH FIX: Target the README inside the profile folder
     readme_path = "profile/README.md"
     with open(readme_path, "r", encoding="utf-8") as f:
         content = f.read()

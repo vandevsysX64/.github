@@ -1,6 +1,6 @@
 # Hi there! 👋
 
-![Profile Views]([https://komarev.com/ghpvc/?username=vandevsysX64])
+![](https://komarev.com/ghpvc/?username=vandevsysX64)
 
 I am a developer focused on low-level system design, data architectures, and flexible software engineering. 
 

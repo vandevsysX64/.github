@@ -1,16 +1,12 @@
 # Hi there! 👋
-
+### My Skills:
+![skils](https://skillicons.dev/icons?i=py,java,linux)
 ![Profile views](https://views.igorkowalczyk.dev/api/badge/vandevsysX64?style=classic)
-
-I am a developer focused on low-level system design, data architectures, and flexible software engineering. 
-
-### 💻 Tech Stack & Skills
 *   🐍 **Python:** Advanced proficiency. Used for high-speed file streaming, binary array manipulation, and engineering data pipelines.
 *   ☕ **Java:** Know a bit of Java; familiar with object-oriented fundamentals and building structured application logic.
+*   🐧 **Linux:** I know random Linux commands.
 *   🌐 **Polyglot Reading:** I can read and interpret many programming languages, allowing me to easily adapt, debug, and translate algorithms across different software environments.
-
 ---
-
 ### 🎬 Featured Project: The .FRes (Full Resolution) Video Specification
 I architected the **.FRes** format, a custom, uncompressed 16-bit HDR video container designed specifically for commercial post-production, VFX caching, and ultra-high-throughput 16K IMAX timelines. 
 

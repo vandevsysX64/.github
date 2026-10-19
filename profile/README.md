@@ -5,9 +5,9 @@
 [![skils](https://skillicons.dev/icons?i=py,java,powershell,windows,linux,bash,git)
 *   🐍 **Python:** Advanced proficiency. Used for high-speed file streaming, binary array manipulation, and engineering data pipelines.
 *   ☕ **Java:** Know a bit of Java; familiar with object-oriented fundamentals and building structured application logic.
-*   🟦 **Windows, PowerShell & Batch:** Proficient in Microsoft environments, utilizing Windows Batch files (`.bat`) and PowerShell scripts for       *   system automation and configuration.
+*   🟦 **Windows, PowerShell & Batch:** Proficient in Microsoft environments, utilizing Windows Batch files (`.bat`) and PowerShell scripts for       *   **system automation and configuration.**
 *   🐧 **Linux & Bash:** Familiar with Linux systems and using Bash shell commands or scripts to navigate environments and automate basic workflows.
-*   🪐 **Polyglot Reading:** Able to read and interpret many programming languages and data schemas like Cosmos DB, allowing for easy adaptation,     *   debugging, and translating of algorithms across different software environments..
+*   🪐 **Polyglot Reading:** Able to read and interpret many programming languages allowing for easy adaptation, debugging, and translating of        *   **algorithms across different software environments.**
 ---
 <!--### 🎬 Featured Project: The .FRes (Full Resolution) Video Specification
 I architected the **.FRes** format, a custom, uncompressed 16-bit HDR video container designed specifically for commercial post-production, VFX caching, and ultra-high-throughput 16K IMAX timelines. 

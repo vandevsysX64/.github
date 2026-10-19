@@ -8,13 +8,13 @@
 *   🐧 **Linux:** I know random Linux commands.
 *   🌐 **Polyglot Reading:** I can read and interpret many programming languages, allowing me to easily adapt, debug, and translate algorithms across different software environments.
 ---
-### 🎬 Featured Project: The .FRes (Full Resolution) Video Specification
+<!--### 🎬 Featured Project: The .FRes (Full Resolution) Video Specification
 I architected the **.FRes** format, a custom, uncompressed 16-bit HDR video container designed specifically for commercial post-production, VFX caching, and ultra-high-throughput 16K IMAX timelines. 
 
 **Key Features of the Engine:**
 *   **Zero-Loss Quality:** Bypasses CPU decompression lag by utilizing a pure back-to-back 16-bit RGB binary stream (mapping up to 68.8 TB for a 1-hour 16K film).
 *   **Interleaved Dynamic Audio:** Supports fractional remainder tracking to keep lossless 24-bit PCM audio flawlessly synced at any frame rate or sampling configuration.
-*   **Audio-First RAM Purge Engine:** Built with a strict data lifecycle that loads audio/video chunks into memory sequentially and purges them instantly after playback—maintaining a low memory footprint (<100MB) regardless of file size.
+*   **Audio-First RAM Purge Engine:** Built with a strict data lifecycle that loads audio/video chunks into memory sequentially and purges them instantly after playback—maintaining a low memory footprint (<100MB) regardless of file size.-->
 
 ---
 
